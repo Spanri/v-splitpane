@@ -5,6 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name v-splitpane src/lib/index.ts",
+    "publish-lib": "npm run build-lib && npm publish --access public",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
